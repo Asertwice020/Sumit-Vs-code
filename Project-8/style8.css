@@ -1,0 +1,203 @@
+/* FONT DECLARATION */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+/* 
+font-family: 'Poppins', sans-serif;
+font-family: 'Quicksand', sans-serif;
+*/
+
+/* BASE RULES */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  list-style: none;
+  text-decoration: none;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+}
+body::-webkit-scrollbar {
+  width: .3rem;
+}
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: red;
+}
+
+/* THEME */
+:root {
+    --bgClr: #000;
+}
+
+/* LAYOUT */
+#wrap {
+    position: relative;
+    height: 100dvh;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--bgClr);
+    overflow: hidden;
+}
+#back {
+    position: relative;
+    height: 100dvh;
+    height: 100vh;
+    width: 100%;
+    transition: all ease-out .3s;
+}
+#back img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#top {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    height: 100dvh;
+    height: 100vh;
+    width: 100%;
+}
+#workingArea {
+  position: relative;
+    width: 80%;
+    max-width: 1920px;
+    height: 100%;
+    margin: 0 auto;
+    /* overflow: hidden; */
+}
+#header {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 0;
+    font-size: 1vw;
+}
+.navLeft, .navRight {
+    display: flex;
+    align-items: center;
+    gap: 4.5vw;
+}
+.navLeft img {
+    width: 5em;
+}
+#header a {
+    pointer-events: all;
+    position: relative;
+    text-decoration: none;
+    font-size: .8em;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#header a::after {
+  content: '';
+  width: 0%;
+  height: .1rem;
+  border-radius: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transition: width linear .3s;
+}
+
+#header a:hover::after {
+  width: 100%;
+}
+
+/* HERO SECTION */
+#HeroSection {
+  font-family: "kajiro";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%; 
+  transform: translate(0%, -50%);
+  display: flex;
+  justify-content: space-between;
+  font-size: 1vw;
+  margin-top: 2vw;
+  padding: 1vw 0;
+  /* border: .1rem solid red; */
+}
+#animatedText {
+  width: 50%;
+  height: 100%;
+}
+#animatedText .animatedContainer h1 {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 100;
+  font-size: 10em;
+  line-height: 0.9;
+}
+#explore {
+  font-family: "kajiro";
+  margin-top: 2vw;
+  background-color: white;
+  padding: .5vw 2vw;
+  font-size: 3.5em;
+  border: none;
+  transition: all linear .3s;
+  pointer-events: all;
+}
+#explore:hover {
+  box-shadow: .4rem .4rem 0 rgb(228, 175, 0);
+}
+
+/* STATIC PA RAS */
+#staticParas {
+  height: 100%;
+  font-family: 'Quicksand', sans-serif;
+  width: 17%;
+  font-size: 1rem;
+  text-align: right;
+  color: white;
+}
+#staticParas #imageDiv {
+  width: 100%;
+  height: 13rem;
+  background-image: url(https://images.unsplash.com/photo-1527203561188-dae1bc1a417f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1430&q=80);
+  background-size: cover;
+  background-position: center;
+  margin: 1vw 0 2vw  0;
+}
+#staticParas p:nth-child(3) {
+  margin-bottom: 5vw;
+}
+#staticParas p:nth-child(4) {
+  margin-bottom: 2vw;
+}
+/* MODULE *//* REUSABLES */
+#flowtingCursor {
+  height: 5rem;
+  width: 5rem;
+  z-index: 5;
+  position: fixed;
+  border-radius: 50%;
+  background-color: red;
+  mix-blend-mode: luminosity;
+  transition: all ease-out .3s ;
+}
+/* STATES */

@@ -1,0 +1,566 @@
+/* FONT DECLARATION */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+/* 
+font-family: 'Poppins', sans-serif;
+font-family: 'Quicksand', sans-serif;
+*/
+/* BASE RULES */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  text-decoration: none;
+  list-style: none;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+}
+body::-webkit-scrollbar {
+  width: .5rem;
+}
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: red;
+  border-radius: 2rem;
+}
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* THEME */
+
+/* LAYOUT */
+
+/* MODULE *//* REUSABLES */
+
+/* STATES */
+
+
+:root{
+--text: #000000;
+--background: #dfdcef;
+--primary: #796cbc;
+--secondary: #bfb9df;
+--accent: #4d408c;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+html {
+  font-size: 10px;
+}
+
+#wrapper {
+  position: relative;
+  background: linear-gradient(270deg, #8c00ff73, yellow, #ff0000d0, #caff9bef);
+  /* background: var(--background); */
+  padding: 3vw 6vw;
+  display: flex;
+  gap: 4rem;
+  flex-direction: column;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6vw;
+  height: 7rem;
+  position: relative;
+  background: var(--background);
+  box-shadow: 0 .1rem .1rem var(--text);
+}
+nav h1 {
+  /* -webkit-text-stroke: 0.15vw black; */
+  -webkit-text-stroke: .15vw var(--text);
+  text-transform: uppercase;
+  font-size: 3vw;
+  color: transparent;
+  letter-spacing: 0.1rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+nav ul {
+  display: flex;
+  gap: 4rem;
+  position: relative;
+}
+nav ul a {
+  position: relative;
+  font-size: 1.5vw;
+  text-transform: capitalize;
+  font-weight: 500;
+  /* color: black; */
+  color: var(--text);
+}
+nav ul i {
+  padding-top: 0.2vw;
+  font-size: 1.6vw;
+  cursor: pointer;
+}
+.ri-moon-fill {
+  display: none;
+  padding-right: 0.1vw;
+  font-size: 1.5vw;
+}
+nav ul a::after {
+  content: "";
+  width: 0%;
+  height: 0.3rem;
+  /* background-color: black; */
+  background-color: var(--text);
+  left: 0;
+  bottom: 0;
+  border-radius: 2rem;
+  position: absolute;
+  transition: all linear 0.4s;
+}
+nav ul a:hover::after {
+  width: 100%;
+}
+#floating-homebtn-keeper i {
+  font-size: 2vw;
+  font-weight: 800;
+  padding: 1.5vw 1.5vw;
+  /* color: var(--background); */
+  position: fixed;
+  left: 1.2vw;
+  bottom: 1.2vw;
+  z-index: 10;
+  background-color: #0000004f;
+  border: 0.2rem solid #006000;
+  border-radius: 50%;
+}
+/* friend-unfriend card project */
+#FRIEND_UNFRIEND_CARD_PROJECT {
+  position: relative;
+  border-radius: 2vw;
+  background-color: #ffffff4a;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  padding: 0 10%;
+}
+#left_card,
+#right_card {
+  background-color: whitesmoke;
+  box-shadow: 0.2rem 0.3rem 1rem #e7dbdb;
+  border: 0.1rem solid white;
+  position: relative;
+  height: 85%;
+  width: 50%;
+  border-radius: 1.5vw;
+  overflow: hidden;
+  padding: 1vw;
+}
+.img {
+  position: relative;
+  height: 50%;
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.text {
+  height: auto;
+  width: 100%;
+  position: relative;
+  padding: 2vh 1vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1vw;
+}
+.name {
+  width: 85%;
+  white-space: nowrap;
+  font-size: 3.2em;
+  font-weight: 800;
+  text-transform: uppercase;
+  overflow-x: auto;
+}
+.name::-webkit-scrollbar {
+  display: none;
+}
+.add {
+  font-size: 1.6em;
+  padding: 0.4em;
+  box-shadow: 0.1em 0.2em 0.3em #b9b2b2;
+  font-weight: 800;
+  border-radius: 50%;
+  color: var(--accent);
+}
+.desc {
+  position: relative;
+  width: 100%;
+  font-size: 1vw;
+  text-align: justify;
+  padding: 1vw;
+  padding-top: 0;
+  overflow: hidden;
+}
+.desc p {
+  font-size: 1.1em;
+  font-weight: 400;
+  padding: 0 0.2vw;
+  color: #666;
+  line-height: 1.7em;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow-y: auto;
+}
+.desc p::-webkit-scrollbar {
+  display: none;
+}
+.desc .chat {
+  margin-top: 1em;
+  border: 0.2rem solid var(--secondary);
+  padding: 0.7em 1em;
+  background-color: whitesmoke;
+  border-radius: 2em;
+  filter: drop-shadow(0.3em 0.3em 0.3em #b9b2b2);
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+.chat input {
+  background-color: transparent;
+  height: auto;
+  width: 100%;
+  font-size: 1.1em;
+  font-weight: 400;
+  outline: none;
+  border: none;
+  line-height: 1.6em;
+}
+.chat i {
+  font-size: 1.7em;
+  font-weight: 800;
+  color: var(--primary);
+  margin-right: 0.3em;
+  cursor: pointer;
+  transition: all linear 0.4s;
+}
+
+/* INSTA LIKE BUTTON PROJECT */
+#INSTA_LIKE_BUTTON {
+  position: relative;
+  border-radius: 2vw;
+  background-color: #ffffff4a;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+#INSTA_LIKE_BUTTON::-webkit-scrollbar {
+  display: none;
+}
+#insta_like_btn_scroller_on_page3 {
+  display: inline-block;
+  position: relative;
+  height: 80vh;
+  width: auto;
+  /* animation: INSTA-LIKE-PROJECT-SCROLLER 20s linear infinite alternate-reverse; */
+}
+.insta_like_btn_img {
+  display: inline-block;
+  margin: 0 2vw;
+  background-color: whitesmoke;
+  box-shadow: 0.1rem 0.3rem 0.8rem #e7dbdb;
+  border: 0.2rem solid white;
+  position: relative;
+  border-radius: 1.5vw;
+  overflow: hidden;
+}
+.insta_like_btn_img img {
+  max-height: 80vh;
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+@keyframes INSTA-LIKE-PROJECT-SCROLLER {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-230%);
+  }
+}
+
+/* ----------------------------------------------------------------- */
+/* Your existing CSS styles for .insta_like_btn_img go here */
+
+#insta_like_btn_scroller_on_page3 {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+#insta_like_btn_scroller_on_page3 .insta_like_btn_img {
+  flex: 0 0 auto;
+  margin: 0 2vw;
+}
+
+/* ------------INSTAGRAM STORY PROJECT */
+#INSTAGRAM_STROY_PROJECT {
+  position: relative;
+  border-radius: 2vw;
+  background-color: rgba(255, 255, 255, 0.292);
+  /* height: 100vh; */
+  height: calc(100vh - 6vw);
+  width: 100%;
+  /* width: calc(100% - 6vw); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Stories {
+  background-color: whitesmoke;
+  box-shadow: 0.2rem 0.3rem 1rem #e7dbdb;
+  border: 0.1rem solid white;
+  /* watch it how to give a gredient in the user's profile story. */
+  outline: .3rem solid var(--primary);
+  outline-offset: .5rem;
+  position: relative;
+  height: 80vh;
+  width: calc(80vh / 1.8);
+  border-radius: 1vw;
+  overflow: hidden;
+}
+
+.insta-navbar {
+  font-size: 1vw;
+  /* position: relative; */ /* i give this property cuase of full story view feature. and when it on, so all the photo comes over the story. */
+  margin-bottom: 1rem;
+  padding: 0.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.insta-navbar img {
+  height: 3vw;
+}
+
+.nav-features i {
+  top: 0.1vw;
+  font-size: 2.1em;
+  margin-left: 2vw;
+}
+
+#container {
+  /* position: relative;  */  /* i give this property cuase of full story view feature. and when it on, so all the photo comes over the story. */
+  width: 100%;
+  padding: 0 0.5vw;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+/* #container::-webkit-scrollbar {
+  width: thin;
+  border-top: .1rem solid red;
+}
+#container::-webkit-scrollbar-track {
+  background-color: blue;
+
+}
+#container::-webkit-scrollbar-thumb {
+  background-color: red;
+} */
+.story {
+  /* --story_CLR : linear-gradient(45deg, #feda75 ,#fa7e1e ,#d62976 ,#962fbf ,#4f5bd5);  */ /* this is the instagram gredient for the story. */
+  display: inline-block;
+  margin-right: 0.5vw;
+  height: 5.6vw;
+  width: 5.6vw;
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 0.3vw;
+  overflow: hidden;
+  border: 0.25rem solid var(--secondary);
+  cursor: pointer;
+  /* transition: ease-out .4s; */
+}
+/* 
+#add-story-btn {
+  position: relative;
+} */
+
+/* #add-story-btn::after {
+  content: " + ";
+  padding: .1vw calc(.1vw * 4);
+  font-size: 1vw;
+  position: sticky;
+  right: 0;
+  color: whitesmoke;
+  border-radius: 50%;
+  z-index: 700;
+  bottom: 0;
+  background-color: #007ce2;
+  border: .2rem solid white;
+} */
+/* 
+#container::-webkit-scrollbar {
+  display: none;
+} */
+
+.story img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  object-position: center;
+  transition: all linear .3s;
+}
+#full-story-view {
+  background-size: cover;
+  background-position: center;
+  height: 90%;
+  width: 100%;
+  position: absolute;
+  display: none;
+}
+#full-story-view-tools {
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 2%;
+}
+.story-timeline {
+  height: .2rem;
+  border-radius: .5rem;
+  width: 0; /* Start with 0 width */
+  background-color: #ededed;
+}
+
+#flowtingCursor{
+  height: 2rem;
+  width: 2rem;
+  background: linear-gradient(45deg, var(--secondary), var(--primary), var(--accent));
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(.8rem);
+  transition: ease-out .5s;
+}
+
+/* Z-INDEX PROPERTY FOR THE PAGES */
+#flowtingCursor {
+  z-index: 2;
+}
+#FRIEND_UNFRIEND_CARD_PROJECT, #INSTA_LIKE_BUTTON, #NAVIGATION{
+  z-index: 1;
+}
+
+#CALCULATOR {
+  position: relative;
+  border-radius: 2vw;
+  background-color: rgba(255, 255, 255, 0.292);
+  height: 100dvh;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#CalculatorContainer {
+  background-color: whitesmoke;
+  box-shadow: 0.2rem 0.3rem 1rem #e7dbdb;
+  border: 0.1rem solid white;
+  position: relative;
+  height: 85vh;
+  width: calc(85vh / 1.5);
+  border-radius: 1.5vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1vw;
+}
+#display {
+  background-color: var(--background);
+  border: none;
+  font-size: 1.7em;
+  height: 5rem;
+  width: 90%;
+  outline: .1rem solid var(--primary);
+  border-radius: .5rem;
+  outline-offset: .3rem;
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 2vw;
+}
+.btns > button {
+  background: var(--secondary);
+  color: var(--text);
+  font-size: 1.7em;
+  font-size: 500;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  margin: 1vw;
+  border: none;
+  box-shadow: .1rem .2rem .5rem var(--accent);
+}
+
+.timeContainer {
+  position: relative;
+  border-radius: 2vw;
+  border: .1rem solid black;
+  background-color: rgba(255, 255, 255, 0.292);
+  height: 100dvh;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#currentTime {
+  height: 15%;
+  width: 50%;
+  padding: 2rem;
+  color: red;
+  font-size: 2.5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}

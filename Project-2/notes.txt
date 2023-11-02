@@ -1,0 +1,30 @@
+theme bg color : #ff753c;
+
+<!-- GSAP MAIN LIBRARY -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- GSAP SCROLLTRIGGER LIBRARY -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+ipconfig --> this is a code line.
+
+class="fa-solid fa-xmark"
+class="fa-solid fa-sun"
+
+crsor logic
+
+// SMALL CURSOR ANIMATION
+let crsr = document.querySelector("#floating-mini-cursor"); //SMALL CRSR CATCHED IN THE VARIABLE
+document.addEventListener("mousemove", function(details) {
+    // FOR THE SMALL CRSR MOVEMENT WHILE USER'S CRSR MOVING.
+    crsr.style.left = details.x + "px",
+    crsr.style.top = details.y + "px"
+})
+
+// BIG-SLOW-BLURY-CURSOR ANIMATION
+let big_blury_slow_crsr = document.querySelector("#big-slow-blury-flaoting-cursor"); //BIG-SLOW-BLURY-CRSR CATCHED IN THE VARIABLE
+document.addEventListener("mousemove", function(details) {
+    // FOR THE BIG-SLOW-BLURY-CURSOR MOVEMENT WHILE USER'S CRSR MOVING.
+    big_blury_slow_crsr.style.left = details.x - 100 + "px",
+    big_blury_slow_crsr.style.top = details.y - 100 + "px"
+})

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS DOM PRACTISE PROGRAMS</title>
+    <!-- PROJECT'S CSS FILE -->
+    <link rel="stylesheet" href="style3.css" />
+    <!-- REMIX ICON LINK -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet"/>
+  </head>
+
+  <body>
+    <!-- FLOWTING CURSOR -->
+    <div id="flowtingCursor"></div>
+    <!-- btn for the initial state or homepage -->
+    <div id="floating-homebtn-keeper">
+      <a href="#NAVIGATION">
+        <i class="ri-arrow-up-line"></i>
+      </a>
+    </div>
+
+    <!-- navigation bar -->
+    <nav id="NAVIGATION">
+      <h1>Projects.</h1>
+      <ul>
+        <a href="#FRIEND_UNFRIEND_CARD_PROJECT" class="nav_hyper_links" text-decoration ="none">Make Friends</a>
+        <a href="#INSTA_LIKE_BUTTON" class="nav_hyper_links" text-decoration ="none">Like Me</a>
+        <i class="ri-sun-fill" onclick="toggleDark()"></i>
+        <i class="ri-moon-fill" onclick="toggleLight()"></i>
+      </ul>
+    </nav>
+
+    </div>
+
+    <main id="wrapper">
+      <!-- friend-unfriend card project -->
+      <div id="FRIEND_UNFRIEND_CARD_PROJECT">
+        <div id="left_card">
+          <div class="img">
+            <img
+              src="C:\Users\raj\Desktop\Sumit Vs-code\Project-3\Assets3\beautiful_woman.jpg"
+              alt=""
+            />
+          </div>
+          <div class="text">
+            <h1 class="name">medusa cate</h1>
+            <i class="ri-user-add-line add"></i>
+          </div>
+          <div class="desc">
+            <p></p>
+            <div class="chat">
+              <input type="text" placeholder="say 'Hi'" />
+              <i class="ri-send-plane-2-fill"></i>
+            </div>
+          </div>
+        </div>
+
+        <div id="right_card">
+          <div class="img">
+            <img
+              src="https://www.slashfilm.com/img/gallery/peaky-blinders-forced-a-change-of-plans-for-cillian-murphys-career/l-intro-1672668151.jpg"
+              alt=""
+            />
+          </div>
+          <div class="text">
+            <h1 class="name">Thomas shelby</h1>
+            <i class="ri-user-add-line add"></i>
+          </div>
+          <div class="desc">
+            <p></p>
+            <div class="chat">
+              <input type="text" placeholder="say 'Hi'" />
+              <i class="ri-send-plane-2-fill"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- INSTA LIKE BUTTON PROJECT -->
+      <div id="INSTA_LIKE_BUTTON">
+        <div id="insta_like_btn_scroller_on_page3">
+          <!-- 1 -->
+          <div class="insta_like_btn_img">
+            <img src="https://tinyurl.com/yy8jah6f" alt="" />
+          </div>
+          <!-- 2 -->
+          <div class="insta_like_btn_img">
+            <img src="https://tinyurl.com/25hdsm52" alt="" />
+          </div>
+          <!-- 3 -->
+          <div class="insta_like_btn_img">
+            <img src="https://tinyurl.com/5a6s7hcz" alt="" />
+          </div>
+          <!-- 4 -->
+          <div class="insta_like_btn_img">
+            <img src="https://tinyurl.com/mvkbfst8" alt="" />
+          </div>
+          <!-- 5 -->
+          <div class="insta_like_btn_img">
+            <img src="https://tinyurl.com/5af8njzr" alt="" />
+          </div>
+          <!-- 6 -->
+          <div class="insta_like_btn_img">
+            <img src="https://tinyurl.com/4cynjxfu" alt="" />
+          </div>
+          <!-- 7 -->
+          <div class="insta_like_btn_img">
+            <img src="https://tinyurl.com/2ec6nm3h" alt="" />
+          </div>
+          <!-- 8 -->
+          <div class="insta_like_btn_img">
+            <img src="https://tinyurl.com/5xyrrd5a" alt="" />
+          </div>
+          <!-- 9 -->
+          <div class="insta_like_btn_img">
+            <img src="https://tinyurl.com/mrbsvhcj" alt="" />
+          </div>
+          <!-- 10 -->
+          <div class="insta_like_btn_img">
+            <img src="https://tinyurl.com/ydrhcjxv" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- INSTSGRAM STORY PROJECT -->
+      <section id="INSTAGRAM_STROY_PROJECT">
+        <section id="Stories">
+          <div class="insta-navbar">
+                <img src="C:\Users\raj\Desktop\Sumit Vs-code\Project-3\Assets3\insta-log.png" alt="">
+  
+              <span class="nav-features">
+                <i class="ri-heart-line"></i>
+                <i class="ri-chat-3-line"></i>
+              </span>
+            </div>
+            <div id="container"></div>
+          <div id="full-story-view">
+            <div id="full-story-view-tools">
+              <div class="story-timeline"></div>
+              <div class="story-closer"></div>
+          </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- -CALCULATOR-->
+      <!-- <section id="CALCULATOR">
+        <div id="CalculatorContainer">
+          <input type="text" name="display" id="display" value="0" placeholder="0" disabled>
+          <div class="btns">
+            <button onclick="clickBtn()">C</button>
+            <button onclick="clickBtn()">%</button>
+            <button onclick="clickBtn()"><i class="ri-chat-delete-line"></i></button>
+            <button onclick="clickBtn()"><i class="ri-divide-line"></i></button>
+          </div>
+          <div class="btns">
+            <button onclick="clickBtn()">7</button>
+            <button onclick="clickBtn()">8</button>
+            <button onclick="clickBtn()">9</button>
+            <button onclick="clickBtn()"><i class="ri-close-line"></i></button>
+          </div>
+          <div class="btns">
+            <button onclick="clickBtn()">4</button>
+            <button onclick="clickBtn()">5</button>
+            <button onclick="clickBtn()">6</button>
+            <button onclick="clickBtn()">-</button>
+          </div>
+          <div class="btns">
+            <button onclick="clickBtn()">1</button>
+            <button onclick="clickBtn()">2</button>
+            <button onclick="clickBtn()">3</button>
+            <button onclick="clickBtn()">+</button>
+          </div>
+          <div class="btns">
+
+            <button onclick="clickBtn()">0</button>
+            <button onclick="clickBtn()">00</button>
+            <button onclick="clickBtn()">.</button>
+            <button onclick="clickBtn()">=</button>
+          </div>
+        </div>
+      </section>
+
+      <div class="timeContainer">
+        <span id="currentTime"></span>
+      </div> -->
+
+      </main>
+
+    <!-- SCRIPT FILES -->
+    <script src="main3.js"></script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+/* FONT DECLARATION */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* BASE RULES */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+  }
+  body::-webkit-scrollbar {
+    width: .3rem;
+  }
+  body::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: red;
+  }
+  
+/* THEME */
+#main {
+    position: relative;
+    overflow: hidden;
+}
+#page1 {
+    height: 100vh;
+    width: 100%;
+    background-color: red;
+    position: relative;
+}
+
+/* LAYOUT */
+
+/* MODULE *//* REUSABLES */
+
+/* STATES */

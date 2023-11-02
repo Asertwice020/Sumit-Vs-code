@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+html {
+  font-size: 10px;
+}
+body {
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+/* STICK BUTTON ON THE PAGE */
+#StickyBtn {
+  background-color: black;
+}
+#StickyBtn i {
+  font-size: 2vw;
+  font-weight: 800;
+  padding: 1.5vw 1.5vw;
+  color: whitesmoke;
+  position: fixed;
+  left: 1.2vw;
+  bottom: 1.2vw;
+  z-index: 10;
+  background-color: #0000004f;
+  border: 0.2rem solid #006000;
+  border-radius: 50%;
+}
+/* NAVIGATION */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6vw;
+  height: 7rem;
+  position: relative;
+  border-bottom: 0.2rem solid black;
+}
+nav h1 {
+  -webkit-text-stroke: 0.15vw black;
+  text-transform: uppercase;
+  font-size: 3vw;
+  color: transparent;
+  letter-spacing: 0.1rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+nav ul {
+  display: flex;
+  gap: 4rem;
+  position: relative;
+}
+nav ul a {
+  position: relative;
+  font-size: 1.5vw;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: black;
+}
+nav ul i {
+  padding-top: 0.2vw;
+  font-size: 1.6vw;
+}
+.ri-moon-fill {
+  display: none;
+  padding-right: 0.1vw;
+  font-size: 1.5vw;
+}
+nav ul a::after {
+  content: "";
+  width: 0%;
+  height: 0.3rem;
+  background-color: black;
+  left: 0;
+  bottom: 0;
+  border-radius: 2rem;
+  position: absolute;
+  transition: all linear 0.4s;
+}
+nav ul a:hover::after {
+  width: 100%;
+}
+/* WRAPPER MAIN DIV */
+#Wrapper {
+  position: relative;
+  background: linear-gradient(270deg, #8c00ff73, yellow, #ff0000d0, #caff9bef);
+  padding: 3vw 6vw;
+  display: flex;
+  gap: 4rem;
+  flex-direction: column;
+}
+/* PAGE 1 */
+#Page1 {
+  position: relative;
+  border-radius: 2vw;
+  background-color: #ffffff4a;
+  height: 100%;
+  width: 100%;
+  padding: 1vw 2vw;
+  font-size: 1vw;
+}
+#Page1 h1 {
+  font-size: 2em;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 0.1rem solid grey;
+  line-height: 2em;
+  margin-bottom: 2vw;
+}
+#wrapImages {
+  background-color: beige;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  height: auto;
+  width: auto;
+  border-radius: .6rem;
+  padding: .5vw;
+}
+.ImageBox {
+    position: relative;
+    overflow: hidden;
+    border-radius: .6rem;
+    /* place-self: center; */
+}
+.ImageBox img {
+  max-width: 100%;
+  height: auto;
+  /* max-height: 100%; */
+  object-fit: cover;
+}
+.ImageBox:hover {
+  background-color: red;
+}

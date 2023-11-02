@@ -1,0 +1,8 @@
+1. github page par apni websit upload karni h, and sath hi janna h ki usko kaise update kar sakte h.
+
+2. ek common css file banani h, jisme sari basic starting css code likha ho, and same goes for html. like: icons, reset styling, and some common js libraries or scripts.
+
+3. apna ek or instagram account banana h for the proffesional usage. and waha tu apna work showcase karege.
+
+4. html, css, js, react and jitni bhi chize h padte chalo, and jab confindent feel karo ki yrr, ha ab to ek project bhale hi chota ho bana skta hu.
+

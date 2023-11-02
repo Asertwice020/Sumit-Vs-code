@@ -1,0 +1,109 @@
+* {
+  text-decoration: none;
+  list-style: none;
+  /* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Quicksand', sans-serif; */
+}
+:root {
+  --bgClr: #eedaff;
+  --headerClr: #000;
+  --ticTacToeBorder: 0.1rem solid red;
+}
+
+body::-webkit-scrollbar {
+    width: .4rem;
+}
+body::-webkit-scrollbar-track {
+    background-color: var(--bgClr);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rebeccapurple;
+    border-radius: .5rem;
+}
+
+/* HEADER START */
+header {
+  background-color: var(--headerClr);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1vw;
+  text-decoration: none;
+  padding: .5vw 5vw;
+
+  & #Logo a {
+    font-size: 5em;
+    font-weight: 700;
+    -webkit-text-stroke: 0.15rem var(--bgClr);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: 900;
+    color: transparent;
+  }
+
+  & nav {
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+  }
+
+  & nav a {
+    font-size: 3em;
+    color: var(--bgClr);
+    font-weight: 500;
+  }
+
+  & .boxText {
+    font-family: 'Poppins', sans-serif;
+/* font-family: 'Quicksand', sans-serif; */
+  }
+}
+/* HEADER END */
+
+/* WRAPPER START */
+#Wrapper {
+    background-color: var(--bgClr);
+    height: 100dvh;
+    height: 100vh;
+    width: 100;
+    padding: 1vw 5vw;
+  }
+
+/* TIC TAC TOE GAME START */
+/* 1. GAMECONTAINER START */
+#gameContainer {
+  margin: 1vw;
+  background: linear-gradient(to right, #d3b6fa88, #9167bb49, #f5f5f5);
+  border: .2rem solid whitesmoke;
+  border-radius: 2rem;
+  box-shadow: .2rem .3rem .5rem whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & #boxContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    padding: 1vw;
+    border-radius: 2rem;
+    margin: 2vw 0;
+    font-size: 1vw;
+    gap: 0.1rem;
+    border: .2rem solid purple;
+  }
+
+  & .box {
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: var(--ticTacToeBorder);
+    border-radius: 20%;
+  }
+  & .boxText {
+    font-weight: 800;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;  
+  }
+}
